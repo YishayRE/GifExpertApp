@@ -10,7 +10,6 @@ const AddCategory = ({setCategories}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         if(InputValue.trim().length > 0){
             setCategories(cats => [InputValue, ...cats]);
             setInputValue('');
@@ -32,5 +31,4 @@ AddCategory.propTypes = {
     setCategories: PropTypes.func.isRequired
 }
 
-export default AddCategory
-
+export default AddCategory;
